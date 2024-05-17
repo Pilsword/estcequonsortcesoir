@@ -10,19 +10,21 @@
 <script>
 	var currentTime = new Date();
 	var d = currentTime.getDay();
-	var h = currentTime.getHours();
-	var i = currentTime.getMinutes();
 	var theOne = document.getElementById('theOne');
-	if(d > 0 && d < 1){
+	if(d == 1){
 		theOne.innerHTML = 'Un lundi ? Tu forçes.';
 	}else if(d == 2){
 		theOne.innerHTML = 'Bon bon, tequila thursday au uma nota.';
-	}else if(d > 2 && d < 5){
-		theOne.innerHTML = 'Allé une ptite bière tranquille';
+	}else if(d == 3){
+		theOne.innerHTML = 'Courses ?';
+	}else if(d == 4){
+		theOne.innerHTML = 'Si vraiment tu me forçes...';
 	}else if(d == 5){
 		theOne.innerHTML = 'Bah bien sûr un vendredi wesh';
+	}else if(d == 6){
+		theOne.innerHTML = 'OUI ET RANDO DEMAIN A 8H';
 	}else{
-		theOne.innerHTML = 'OUI ET RANDO A 8H';
+		theOne.innerHTML = 'Bon, ça travaille demain mais en vrai allé';
 	}
 </script>
 </html>

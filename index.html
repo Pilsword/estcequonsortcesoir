@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Est-ce qu'on va boire ce soir ?</title>
+</head>
+<body>
+	<h1 id="theOne" style="text-align: center;margin: 100px;"></h1>
+</body>
+<script>
+	var currentTime = new Date();
+	var d = currentTime.getDay();
+	var h = currentTime.getHours();
+	var i = currentTime.getMinutes();
+	var theOne = document.getElementById('theOne');
+	if(d > 0 && d < 5){
+		theOne.innerHTML = 'Un lundi ? Tu forçes.';
+	}else if(d == 5 && h < 17){
+		theOne.innerHTML = 'Bon bon, tequila thursday au uma nota.';
+	}else if(d == 5 && (h < 18 || (h == 18 && i < 11))){
+		theOne.innerHTML = 'Allé une ptite bière tranquille';
+	}else if(d == 5 && (h < 19 || (h == 19 && i < 30))){
+		theOne.innerHTML = 'Bah bien sûr un vendredi wesh';
+	}else{
+		theOne.innerHTML = 'OUI ET RANDO A 8H';
+	}
+</script>
+</html>

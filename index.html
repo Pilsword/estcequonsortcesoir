@@ -13,13 +13,13 @@
 	var h = currentTime.getHours();
 	var i = currentTime.getMinutes();
 	var theOne = document.getElementById('theOne');
-	if(d > 0 && d < 5){
+	if(d > 0 && d < 1){
 		theOne.innerHTML = 'Un lundi ? Tu forçes.';
-	}else if(d == 5 && h < 17){
+	}else if(d == 2){
 		theOne.innerHTML = 'Bon bon, tequila thursday au uma nota.';
-	}else if(d == 5 && (h < 18 || (h == 18 && i < 11))){
+	}else if(d > 2 && d < 5){
 		theOne.innerHTML = 'Allé une ptite bière tranquille';
-	}else if(d == 5 && (h < 19 || (h == 19 && i < 30))){
+	}else if(d == 5){
 		theOne.innerHTML = 'Bah bien sûr un vendredi wesh';
 	}else{
 		theOne.innerHTML = 'OUI ET RANDO A 8H';

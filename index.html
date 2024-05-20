@@ -1,30 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<title>Est-ce qu'on va boire ce soir ?</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=main.css>
+    <title>Est-ce qu'on va boire ce soir ?</title>
 </head>
 <body>
-	<h1 id="theOne" style="text-align: center;margin: 100px;"></h1>
+<h1 id="theOne" style="text-align: center;margin: 100px;"></h1>
+<div>Your daily raccoon GIF:</div>
+<div class="out"></div><br>
+<div>Your daily pooping nata:</div><br>
+<div id="img"><img id="image_shower"/></div>
+<!-- get location of the picture based on the name -->
 </body>
-<script>
-	var currentTime = new Date();
-	var d = currentTime.getDay();
-	var theOne = document.getElementById('theOne');
-	if(d == 1){
-		theOne.innerHTML = 'Un lundi ? Tu forçes.';
-	}else if(d == 2){
-		theOne.innerHTML = 'Bon bon, tequila thursday au uma nota.';
-	}else if(d == 3){
-		theOne.innerHTML = 'Courses ?';
-	}else if(d == 4){
-		theOne.innerHTML = 'Si vraiment tu me forçes...';
-	}else if(d == 5){
-		theOne.innerHTML = 'Bah bien sûr un vendredi wesh !?';
-	}else if(d == 6){
-		theOne.innerHTML = 'OUI ET RANDO DEMAIN A 8H, mais macdo avant';
-	}else{
-		theOne.innerHTML = 'Bon, ça travaille demain mais en vrai allé';
-	}
-</script>
+<script src="nata.js"></script>
+<script src="status.js"></script>
+<script src="giphy.js"></script>
 </html>

@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href=main.css>
-    <title>Est-ce qu'on va boire ce soir ?</title>
-</head>
-<body>
-<h1 id="theOne" style="text-align: center;margin: 100px;"></h1>
-<div>Your daily raccoon GIF:</div>
-<div class="out"></div><br>
-<div>Your daily pooping nata:</div><br>
-<div id="img"><img id="image_shower"/></div>
-<!-- get location of the picture based on the name -->
-</body>
-<script src="nata.js"></script>
-<script src="status.js"></script>
-<script src="giphy.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href=main.css>
+        <title>Est-ce qu'on va boire ce soir ?</title>
+    </head>
+    <body>
+        <div>Est-ce qu'on sort ce soir ?</div>
+        <h1 id="theOne" style="text-align: center;margin: 100px;"></h1>
+        <div>Just some random timer...</div>
+        <div id="countdown">
+            <h1 id="timer">Loading...</h1>
+            <p id="message"></p>
+        </div>
+        <div>Your daily raccoon GIF:</div>
+        <div class="out image"></div><br>
+        <div>Your daily pooping nata:</div><br>
+        <div id="img"><img id="image_shower" class="image"/></div>
+    </body>
+    <script src="countdown.js"></script>
+    <script src="nata.js"></script>
+    <script src="status.js"></script>
+    <script src="giphy.js"></script>
 </html>

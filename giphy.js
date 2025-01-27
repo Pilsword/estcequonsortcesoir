@@ -14,7 +14,7 @@ fetch(url)
     img.alt = content.data.title;
     fc.textContent = content.data.title;
     fig.appendChild(img);
-    fig.appendChild(fc);
+    // fig.appendChild(fc);
     let out = document.querySelector(".out");
     out.insertAdjacentElement("afterbegin", fig);
 })
